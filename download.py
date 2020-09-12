@@ -2,7 +2,7 @@ import os
 import requests
  
 def download(url):
-    download_path = os.getcwd() + "\download"
+    download_path = '/root/AndroidHeatMap/download/'
     if not os.path.exists(download_path):
         os.mkdir(download_path)
     all_content = requests.get(url).text
@@ -18,7 +18,7 @@ def download(url):
                 pd_url = url.rsplit("/", 1)[0] + "/" + file_line[index + 1]
                 res = requests.get(pd_url)
                 c_fule_name = str(file_line[index + 1])
-                with open(download_path + "\\" + c_fule_name, 'ab') as f:
+                with open(download_path + "/" + c_fule_name, 'ab') as f:
                     f.write(res.content)
                     f.flush()
         if unknow:
