@@ -1,0 +1,15 @@
+package main
+
+import "github.com/gin-gonic/gin"
+func main() {
+  resp, _ := http.Get("http://myexternalip.com/raw")
+  defer resp.Body.Close()
+  content, _ := ioutil.ReadAll(resp.Body)
+  r := gin.Default()
+  r.GET("/addr", func(c *gin.Context) {
+    c.JSON(200, gin.H{
+      "addr": string(content),
+    })
+  })
+  r.Run(":8081")
+}
