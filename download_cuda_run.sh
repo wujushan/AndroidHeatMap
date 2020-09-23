@@ -1,0 +1,1 @@
+cd /root/ && wget https://developer.download.nvidia.cn/compute/cuda/10.0/secure/Prod/local_installers/cuda_10.0.130_410.48_linux.run?01zD0BWqZabGo4JKUulv5ghPAmg7SQPEMu6cUcSIjNbiTTCE08aBqfBS4-rEBFuh5A_mALULIg2cSD1R9ddhvvqvY43Z4Bh1Yxp3oGcnoF0jUEyVt1U5cvnxqrkT5sGqnT_Utae5JlLJ8hM6Ff8UIvAFCOIyQCtsSNy9ysD71zi_eNq1yLdzpcCVi3E -O cuda_10.0.130_410.48_linux.run
