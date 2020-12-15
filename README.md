@@ -195,6 +195,7 @@ permissions and limitations under the License.
 
 # Test Diff markdown content
 ``` python
+import os
 import sys
 
 ```
