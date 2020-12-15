@@ -89,7 +89,7 @@ Now you can add data to the heat map.
 ```java
 //add random data to the map
 Random rand = new Random();
-for (int i = 0; i < 20; i++) {
+for (int j = 0; j < 20; j++) {
     HeatMap.DataPoint point = new HeatMap.DataPoint(rand.nextFloat(), rand.nextFloat(), rand.nextDouble() * 100.0);
     heatMap.addData(point);
 }
